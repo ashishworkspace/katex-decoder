@@ -68,8 +68,8 @@ export default function App() {
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                 <Textarea
                     onChange={handleDelimiterChange}
-                    label="Enter your Delimeters"
-                    placeholder="Delimeters here"
+                    label="Enter your Delimiters"
+                    placeholder="Delimiters here"
                     resize="vertical"
                     size="md"
                     autosize
