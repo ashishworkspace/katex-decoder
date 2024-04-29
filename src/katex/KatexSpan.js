@@ -3,15 +3,12 @@ import renderMathInElement from 'katex/dist/contrib/auto-render';
 import 'katex/dist/katex.min.css';
 import { useEffect, useRef } from 'react';
 
-export default function KatexSpan({ text, ...delegated }) {
+export default function KatexSpan({ text, delimiters, ...delegated }) {
     const katexTextRef = useRef();
     useEffect(() => {
         if (katexTextRef.current) {
             renderMathInElement(katexTextRef.current, {
-                delimiters: [
-                    { left: '$', right: '$', display: false }, // block
-                    { left: '\\[', right: '\\]', display: true }, // inline
-                ],
+                delimiters: delimiters,
             });
         }
     }, [text]);
@@ -22,3 +19,5 @@ export default function KatexSpan({ text, ...delegated }) {
         </div>
     );
 }
+
+
