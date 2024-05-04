@@ -75,53 +75,58 @@ export default function App() {
                     autosize
                 />
             </Grid.Col>
+
         </Grid>
         <Grid>
-            <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                 <Textarea
+                    autosize
                     onChange={(e) => {
                         setUserInput(e.target.value)
                     }}
                     label="Enter your katex"
                     placeholder="Input 1st"
                 />
-                <div className="bg-slate-950 text-white w-full p-2 my-4">
+                <div className="bg-slate-950 text-white w-full p-2 my-4" style={{ maxHeight: '200px', overflowY: 'auto' }}>
                     <KatexSpan delimiters={delimiters} text={userInput} />
                 </div>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                 <Textarea
+                    autosize
                     onChange={(e) => {
                         setUserInput2(e.target.value)
                     }}
                     label="Enter your katex"
                     placeholder="Input 2nd"
                 />
-                <div className="bg-slate-950 text-white w-full p-2 my-4">
+                <div className="bg-slate-950 text-white w-full p-2 my-4" style={{ maxHeight: '200px', overflowY: 'auto' }}>
                     <KatexSpan delimiters={delimiters} text={userInput2} />
                 </div>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                 <Textarea
+                    autosize
                     onChange={(e) => {
                         setUserInput3(e.target.value)
                     }}
                     label="Enter your katex"
                     placeholder="Input 3rd"
                 />
-                <div className="bg-slate-950 text-white w-full p-2 my-4">
+                <div className="bg-slate-950 text-white w-full p-2 my-4" style={{ maxHeight: '200px', overflowY: 'auto' }}>
                     <KatexSpan delimiters={delimiters} text={userInput3} />
                 </div>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                 <Textarea
+                    autosize
                     onChange={(e) => {
                         setUserInput4(e.target.value)
                     }}
                     label="Enter your katex"
                     placeholder="Input 4th"
                 />
-                <div className="bg-slate-950 text-white w-full p-2 my-4">
+                <div className="bg-slate-950 text-white w-full p-2 my-4" style={{ maxHeight: '200px', overflowY: 'auto' }}>
                     <KatexSpan delimiters={delimiters} text={userInput4} />
                 </div>
             </Grid.Col>
